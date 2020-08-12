@@ -1,0 +1,235 @@
+* {
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* header */
+.navbar {
+	background-color: transparent !important;
+}
+
+.navbar-toggler {
+	border: 1px solid rgba(141, 108, 204, 0.986);
+}
+.navbar-toggler-icon {
+	background-color: rgba(141, 108, 204, 0.986) !important;
+}
+.navbar a {
+	color: rgba(141, 108, 204, 0.986) !important;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar a:hover,
+.navbar a:focus {
+	color: #fff !important;
+}
+/* header {
+	background-image: url("../images/carlos-quintero-_wbpK1imCrs-unsplash.jpg");
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+} */
+header {
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.99)),
+		url("https://images.unsplash.com/photo-1530916123588-1e1f619bb71e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80")no-repeat center center/cover;
+}
+header .container i.first-icon {
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	font-size: 25px;
+	background: linear-gradient(to bottom, #520545, rgba(141, 108, 204, 0.986));
+	color: white;
+	padding: 8px 10px 10px;
+	cursor: pointer;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .3s ease-in-out;
+	z-index: 999;
+	border-radius: 50%;
+}
+header .container i.first-icon:hover {
+	background: linear-gradient(to top, #520545, #12424b);
+	transition: .5s;
+}
+
+.bb {
+	position: absolute;
+	bottom: 30% !important;
+	color: rgba(141, 108, 204, 0.986) !important;
+}
+/* end header */
+/* section about */
+.about {
+	background-image: linear-gradient(to top right, #35c6dfab, rgb(22, 2, 61), rgb(130, 100, 189), #35c6dfab);
+}
+/* end section about */
+/* section products */
+/* end section products */
+.products .bg-card {
+	background: rgba(231, 236, 183, 0.575) !important;
+}
+/* section pricing */
+.pricing {
+	background: linear-gradient(to bottom left, rgba(208, 228, 98, 0.582), #fff);
+}
+/* end section pricing */
+/* section photos */
+/* .photos {
+	background: linear-gradient(to top, rgba(5, 15, 2, 0.253), #fff);
+} */
+.photos .container h2.alpha {
+	font-size: 80px;
+	margin-top: 0;
+	padding-left: 14px;
+	font-family: 'Berkshire Swash', cursive;
+	background: linear-gradient(to top, rgba(120, 134, 114, 0.178), #fff);
+}
+/* end section photos */
+/* section most liked */
+.video {
+	position: relative;
+	margin-top: 25px;
+	height: 250px;
+}
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+.bg-video {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+/* end most liked */
+/* section contact */
+.bg-contact {
+	background-color: rgb(8, 4, 22);
+	height: 560px;
+	border: 6px solid #35c5df;
+}
+/* .contact h2 {
+	color: #35c5df;
+} */
+.contact .row100 {
+	position: relative;
+	width: 100%;
+	margin: 30px 0;
+}
+.contact .row100 .col {
+	position: relative;
+	width: 100%;
+	padding: 0 10px;
+	transition: 0.5s;
+}
+/* @media (max-width: 768px) {
+	.map-container,
+	.bg-contact {
+		width: 70%;
+	}
+} */
+.contact h2 {
+	color: #35c5df;
+}
+.contact .row100 .inputBox {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	color: #35c5df;
+}
+.contact .row100 .inputBox input,
+.contact .row100 .inputBox.textarea textarea {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	padding: 0 10px;
+	z-index: 1;
+	color: #000;
+}
+.contact .row100 .inputBox .text,
+.contact .row100 .inputBox.textarea .text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 40px;
+	font-size: 18px;
+	padding: 0 10px;
+	display: block;
+	transition: 0.5s;
+	pointer-events: none;
+}
+.contact .row100 .inputBox input:focus + .text,
+.contact .row100 .inputBox input:valid + .text,
+.contact .row100 .inputBox textarea:focus + .text,
+.contact .row100 .inputBox textarea:valid + .text {
+	top: -35px;
+	left: -10px;
+}
+.contact .row100 .inputBox .line {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #35c5df;
+	transition: 0.5s;
+	border-radius: 2px;
+	pointer-events: none;
+}
+.contact .row100 .inputBox input:focus ~ .line,
+.contact .row100 .inputBox input:valid ~ .line,
+.contact .row100 .inputBox textarea:focus ~ .line,
+.contact .row100 .inputBox textarea:valid ~ .line {
+	height: 100%;
+}
+.contact .row100 .inputBox.textarea {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	padding: 10px 0;
+}
+.contact .row100 .inputBox .textarea textarea {
+	height: 100%;
+	resize: none;
+}
+input[type="submit"] {
+	border: none;
+	padding: 7px 35px;
+	cursor: pointer;
+	outline: none;
+	background-color: #35c5df;
+	color: #000;
+	font-size: 18px;
+	border-radius: 2px;
+}
+/* end section contact */
+/* footer */
+footer {
+	background: linear-gradient(to top, #35c5df, rgb(8, 4, 22));
+	color: white;
+	padding: 30px 20px;
+}
+hr {
+	height: 2px;
+	background: linear-gradient(to right, #776644, #fff, #776644, #fff, #776644, #fff, #776644);
+}
+footer i {
+	cursor: pointer;
+}
+footer i:hover {
+	color: #82e4f5;
+	transform: scale(1.3);
+}
+/* end footer */
